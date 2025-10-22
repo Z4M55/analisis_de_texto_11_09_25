@@ -4,6 +4,10 @@ from textblob import TextBlob
 import re
 from googletrans import Translator
 
+image = Image.open('ana.jpg')
+
+
+
 # Configuración de la página
 st.set_page_config(
     page_title="Analizador de Texto Simple",
@@ -11,7 +15,6 @@ st.set_page_config(
     layout="wide"
 )
 
-image = Image.open('ana.jpg')
 
 # Título y descripción
 st.title("📝 Analizador de Texto con TextBlob")
