@@ -5,11 +5,7 @@ import re
 from googletrans import Translator
 
 
-if os.path.exists('anal.jpg'):
-    image = Image.open('anal.jpg')
-    st.image(image, caption='TextBlob', use_container_width=True)
-else:
-    st.error("⚠️ Imagen 'anal.jpg' no encontrada. Verifica la ruta.")
+
 
 # Configuración de la página
 st.set_page_config(
