@@ -4,7 +4,7 @@ from textblob import TextBlob
 import re
 from googletrans import Translator
 
-image = Image.open('ana.jpg')
+image = Image.open('anal.jpg')
 
 
 
