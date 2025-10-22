@@ -11,6 +11,8 @@ st.set_page_config(
     layout="wide"
 )
 
+image = Image.open('ana.jpg')
+
 # Título y descripción
 st.title("📝 Analizador de Texto con TextBlob")
 st.markdown("""
