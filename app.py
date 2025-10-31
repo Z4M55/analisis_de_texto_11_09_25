@@ -39,7 +39,7 @@ with st.expander('Analyzing Polarity and Subjectivity in a Text'):
         if x >= 0.5:
             st.write( 'It´s a positive feeling. 😀')
         elif x <= -0.5:
-            st.write( 'It's a negative feeling. 😔')
+            st.write( 'It´s a negative feeling. 😔')
         else:
             st.write( 'It's a neutral feeling. 😐')
 
