@@ -7,7 +7,7 @@ from googletrans import Translator
 #st.image(image, use_column_width=True)
 
 translator = Translator()
-st.title('Uso de textblob')
+st.title('Use the textblob')
 
 st.subheader("Please enter the sentence you want to analyze in Spanish in the text field.")
 with st.sidebar:
