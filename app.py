@@ -3,8 +3,8 @@ from textblob import TextBlob
 from googletrans import Translator
 
 
-image = Image.open("textblob.jpg")  
-st.image(image, use_column_width=True)
+#image = Image.open("textblob.jpg")  
+#st.image(image, use_column_width=True)
 
 translator = Translator()
 st.title('Uso de textblob')
