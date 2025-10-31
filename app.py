@@ -11,20 +11,20 @@ st.title('Uso de textblob')
 
 st.subheader("Please enter the sentence you want to analyze in Spanish in the text field.")
 with st.sidebar:
-               st.subheader("Polaridad y Subjetividad")
+               st.subheader("Polarity and Subjectivity")
                ("""
-                Polaridad: Indica si el sentimiento expresado en el texto es positivo, negativo o neutral. 
-                Su valor oscila entre -1 (muy negativo) y 1 (muy positivo), con 0 representando un sentimiento neutral.
+                Polarity: Indicates whether the sentiment expressed in the text is positive, negative, or neutral. 
+Its value ranges from -1 (very negative) to 1 (very positive), with 0 representing neutral sentiment.
                 
-               Subjetividad: Mide cuánto del contenido es subjetivo (opiniones, emociones, creencias) frente a objetivo
-               (hechos). Va de 0 a 1, donde 0 es completamente objetivo y 1 es completamente subjetivo.
+               Subjectivity: Measures how much of the content is subjective (opinions, emotions, beliefs) versus objective
+(facts). It ranges from 0 to 1, where 0 is completely objective and 1 is completely subjective.
 
                  """
                ) 
 
 
-with st.expander('Analizar Polaridad y Subjetividad en un texto'):
-    text1 = st.text_area('Escribe por favor: ')
+with st.expander('Analyzing Polarity and Subjectivity in a Text'):
+    text1 = st.text_area('Please write: ')
     if text1:
 
         translation = translator.translate(text1, src="es", dest="en")
@@ -37,11 +37,11 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
         x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
-            st.write( 'Es un sentimiento Positivo 😊')
+            st.write( 'It's a positive feeling. 😊')
         elif x <= -0.5:
-            st.write( 'Es un sentimiento Negativo 😔')
+            st.write( 'It's a negative feeling. 😔')
         else:
-            st.write( 'Es un sentimiento Neutral 😐')
+            st.write( 'It's a neutral feeling. 😐')
 
 with st.expander('Corrección en inglés'):
        text2 = st.text_area('Escribe por favor: ',key='4')
