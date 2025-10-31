@@ -41,7 +41,7 @@ with st.expander('Analyzing Polarity and Subjectivity in a Text'):
         elif x <= -0.5:
             st.write( 'It´s a negative feeling. 😔')
         else:
-            st.write( 'It's a neutral feeling. 😐')
+            st.write( 'It´s a neutral feeling. 😐')
 
 with st.expander('Corrección en inglés'):
        text2 = st.text_area('Escribe por favor: ',key='4')
