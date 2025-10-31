@@ -9,7 +9,7 @@ st.image(image, use_column_width=True)
 translator = Translator()
 st.title('Uso de textblob')
 
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+st.subheader("Please enter the sentence you want to analyze in Spanish in the text field.")
 with st.sidebar:
                st.subheader("Polaridad y Subjetividad")
                ("""
